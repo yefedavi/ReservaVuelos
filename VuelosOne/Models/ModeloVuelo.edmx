@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ReservaVuelosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ReservaVuelosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Aerolinea">
           <Key>
             <PropertyRef Name="Codigo" />
@@ -31,9 +31,10 @@
           <Key>
             <PropertyRef Name="Codigo" />
           </Key>
-          <Property Name="Codigo" Type="int" Nullable="false" />
-          <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="FechaNacimiento" Type="datetime" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="Vuelo">
           <Key>
@@ -47,6 +48,7 @@
           <Property Name="Origen" Type="int" Nullable="false" />
           <Property Name="Destino" Type="int" Nullable="false" />
           <Property Name="Tarifa" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="Aerolinea" Type="int" Nullable="false" />
         </EntityType>
         <Association Name="FK_Reserva_Usuario">
           <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
@@ -69,6 +71,18 @@
             </Principal>
             <Dependent Role="Reserva">
               <PropertyRef Name="Vuelo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Vuelo_Aerolinea">
+          <End Role="Aerolinea" Type="Self.Aerolinea" Multiplicity="1" />
+          <End Role="Vuelo" Type="Self.Vuelo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aerolinea">
+              <PropertyRef Name="Codigo" />
+            </Principal>
+            <Dependent Role="Vuelo">
+              <PropertyRef Name="Aerolinea" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -110,6 +124,10 @@
             <End Role="Vuelo" EntitySet="Vuelo" />
             <End Role="Reserva" EntitySet="Reserva" />
           </AssociationSet>
+          <AssociationSet Name="fk_Vuelo_Aerolinea" Association="Self.fk_Vuelo_Aerolinea">
+            <End Role="Aerolinea" EntitySet="Aerolinea" />
+            <End Role="Vuelo" EntitySet="Vuelo" />
+          </AssociationSet>
           <AssociationSet Name="FK_Vuelo_destino" Association="Self.FK_Vuelo_destino">
             <End Role="Ciudad" EntitySet="Ciudad" />
             <End Role="Vuelo" EntitySet="Vuelo" />
@@ -119,8 +137,7 @@
             <End Role="Vuelo" EntitySet="Vuelo" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ReservaVuelosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -130,6 +147,7 @@
           </Key>
           <Property Name="Codigo" Type="Int32" Nullable="false" />
           <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Vuelo" Relationship="ReservaVuelosModel.fk_Vuelo_Aerolinea" FromRole="Aerolinea" ToRole="Vuelo" />
         </EntityType>
         <EntityType Name="Ciudad">
           <Key>
@@ -158,6 +176,7 @@
           <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="Reserva" Relationship="Self.FK_Reserva_Usuario" FromRole="Usuario" ToRole="Reserva" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Vuelo">
           <Key>
@@ -174,6 +193,8 @@
           <NavigationProperty Name="Ciudad" Relationship="Self.FK_Vuelo_destino" FromRole="Vuelo" ToRole="Ciudad" />
           <NavigationProperty Name="Ciudad1" Relationship="Self.FK_Vuelo_origen" FromRole="Vuelo" ToRole="Ciudad" />
           <NavigationProperty Name="Reserva" Relationship="Self.FK_Reserva_Vuelo" FromRole="Vuelo" ToRole="Reserva" />
+          <Property Name="Aerolinea" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Aerolinea1" Relationship="ReservaVuelosModel.fk_Vuelo_Aerolinea" FromRole="Vuelo" ToRole="Aerolinea" />
         </EntityType>
         <Association Name="FK_Vuelo_destino">
           <End Role="Ciudad" Type="Self.Ciudad" Multiplicity="1" />
@@ -245,7 +266,23 @@
             <End Role="Vuelo" EntitySet="Vuelo" />
             <End Role="Reserva" EntitySet="Reserva" />
           </AssociationSet>
+          <AssociationSet Name="fk_Vuelo_Aerolinea" Association="ReservaVuelosModel.fk_Vuelo_Aerolinea">
+            <End Role="Aerolinea" EntitySet="Aerolinea" />
+            <End Role="Vuelo" EntitySet="Vuelo" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="fk_Vuelo_Aerolinea">
+          <End Type="ReservaVuelosModel.Aerolinea" Role="Aerolinea" Multiplicity="1" />
+          <End Type="ReservaVuelosModel.Vuelo" Role="Vuelo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aerolinea">
+              <PropertyRef Name="Codigo" />
+            </Principal>
+            <Dependent Role="Vuelo">
+              <PropertyRef Name="Aerolinea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -280,6 +317,7 @@
           <EntitySetMapping Name="Usuario">
             <EntityTypeMapping TypeName="ReservaVuelosModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="Codigo" ColumnName="Codigo" />
                 <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
@@ -289,6 +327,7 @@
           <EntitySetMapping Name="Vuelo">
             <EntityTypeMapping TypeName="ReservaVuelosModel.Vuelo">
               <MappingFragment StoreEntitySet="Vuelo">
+                <ScalarProperty Name="Aerolinea" ColumnName="Aerolinea" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Estado" ColumnName="Estado" />
                 <ScalarProperty Name="AsientosDisponibles" ColumnName="AsientosDisponibles" />

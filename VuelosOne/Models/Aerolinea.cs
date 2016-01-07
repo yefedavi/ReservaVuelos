@@ -14,7 +14,14 @@ namespace VuelosOne.Models
     
     public partial class Aerolinea
     {
+        public Aerolinea()
+        {
+            this.Vuelo = new HashSet<Vuelo>();
+        }
+    
         public int Codigo { get; set; }
         public string Nombre { get; set; }
+    
+        public virtual ICollection<Vuelo> Vuelo { get; set; }
     }
 }

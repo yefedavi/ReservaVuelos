@@ -22,6 +22,7 @@ namespace VuelosOne.Models
         public int Codigo { get; set; }
         public string Username { get; set; }
         public System.DateTime FechaNacimiento { get; set; }
+        public string Password { get; set; }
     
         public virtual ICollection<Reserva> Reserva { get; set; }
     }

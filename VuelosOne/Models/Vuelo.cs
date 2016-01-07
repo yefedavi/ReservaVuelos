@@ -27,9 +27,11 @@ namespace VuelosOne.Models
         public int Origen { get; set; }
         public int Destino { get; set; }
         public decimal Tarifa { get; set; }
+        public int Aerolinea { get; set; }
     
         public virtual Ciudad Ciudad { get; set; }
         public virtual Ciudad Ciudad1 { get; set; }
         public virtual ICollection<Reserva> Reserva { get; set; }
+        public virtual Aerolinea Aerolinea1 { get; set; }
     }
 }

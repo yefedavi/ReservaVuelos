@@ -9,7 +9,10 @@ namespace VuelosOne
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-2.1.4.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                        "~/Scripts/bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
@@ -23,7 +26,13 @@ namespace VuelosOne
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/bootstrapcss").Include(
+                "~/Content/bootstrap/bootstrap.css",
+                "~/Content/bootstrap/bootstrap-theme.css",
+                "~/Content/bootstrap/simple-sidebar.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
