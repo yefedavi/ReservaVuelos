@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using VuelosOne.Models;
+
+namespace VuelosOne.BussinesClass
+{
+    public interface IAdministrarUsuarios
+    {
+        /// <summary>
+        /// Mètodo encargado de crear un usuario e insertarlo en la base de datos
+        /// </summary>
+        /// <param name="usuario"></param>
+        Boolean CrearUsuario(Usuario usuario);
+        /// <summary>
+        /// Mètodo encargado de consultar un usuario atravès del username
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns>Usuario registrado en la base de datos</returns>
+        Usuario ConsultarUsuario(String username);
+        /// <summary>
+        /// Mètodo encargado de validar el usuario para ingresar a la aplicaciòn
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="contraseña"></param>
+        /// <returns>true si el ingreso es exitoso,de lo contrario false</returns>
+        Boolean LoguearUsuario(String username, String contraseña);
+        /// <summary>
+        /// Mètodo encargado de obtener todos los usuarios registrados en la aplicaciòn
+        /// </summary>
+        /// <returns>Lista de usuarios</returns>
+        List<Usuario> GetAllUsuarios();
+    }
+}
