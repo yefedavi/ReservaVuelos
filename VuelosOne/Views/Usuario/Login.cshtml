@@ -28,6 +28,6 @@
         @Html.LabelFor(model => Model.Password, "Contraseña")
         @Html.TextBoxFor(model => model.Password, new { type = "password", @class = "form-control", @id = "password" })
 
-    <button class="btn btn-sm btn-primary btn-block" type="submit" onclick="LoguearUsuario();">Ingresar</button>
+    <button class="btn btn-sm btn-primary btn-block" id="btnLoguearApp" type="submit" onclick="LoguearUsuario();">Ingresar</button>
 
 </div>

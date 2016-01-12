@@ -19,9 +19,9 @@
                     <li class="sidebar-brand">
                         <a href="#">Bienvenido @Session["usuario"]</a>
                     </li>
-                    <li>@Html.ActionLink("Consulta de vuelos", "../Vuelo/Index") </li>
-                    <li>@Html.ActionLink("Reservaciòn de vuelos", "../") </li>
-                    <li>@Html.ActionLink("Estado de vuelos", "../") </li>
+                    <li>@Html.ActionLink("Consulta de vuelos", "../Vuelo/Index", new {id = "consultaVuelosLink"}) </li>
+                    <li>@Html.ActionLink("Reservaciòn de vuelos", "../", new { id = "reservaVuelosLink" }) </li>
+                    <li>@Html.ActionLink("Estado de vuelos", "../", new { id = "estadoVuelosLink" })) </li>
                     <li>
                         @Html.ActionLink("Salir", "../Usuario/Salir")
                     </li>
@@ -29,9 +29,9 @@
                 else
                 {
                     <li class="sidebar-brand">
-                        @Html.ActionLink("Iniciar sesion", "../Usuario/Login")
+                        @Html.ActionLink("Iniciar sesion", "../Usuario/Login", new {id = "iniciarSesionLink"}))
                     </li>
-                    <li>@Html.ActionLink("Registrarse", "../Usuario/RegistrarUsuario")</li>
+                    <li>@Html.ActionLink("Registrarse", "../Usuario/RegistrarUsuario", new {id = "registroUserLink"})</li>
                 }
 
 
