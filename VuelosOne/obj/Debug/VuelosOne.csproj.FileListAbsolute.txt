@@ -98,3 +98,4 @@ C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\Vu
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\TechTalk.SpecFlow.dll
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\TechTalk.SpecRun.dll
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\nunit.framework.xml
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\VuelosOne.dll.config
