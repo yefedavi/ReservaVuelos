@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VuelosOne.Controllers;
 using VuelosOne.Models;
 using System.Web.Mvc;
@@ -12,12 +11,13 @@ using Moq;
 using VuelosOne.Tests.Mocks;
 using System.Web;
 using MvcContrib.TestHelper;
+using NUnit.Framework;
 
 namespace VuelosOne.Tests.Controllers
 {
 
 
-    [TestClass]
+    [TestFixture]
     public class UsuarioControllerTest
     {
         public static String EXITO = "Exitoso";
@@ -26,7 +26,7 @@ namespace VuelosOne.Tests.Controllers
         private Mock<IAdministrarUsuarios> objetoMock;
         private UsuarioController usuarioControlador;
 
-        [TestInitialize()]
+        [TestFixtureSetUp]
         public void Initialize() {
             objetoMock = new Mock<IAdministrarUsuarios>();
             AdministrarUsuarioMOCK mock = new AdministrarUsuarioMOCK();
@@ -35,7 +35,7 @@ namespace VuelosOne.Tests.Controllers
             builder.InitializeController(usuarioControlador);
         }
 
-        [TestMethod]
+        [Test]
         public void CargarUsuarioControllerTest()
         {
             // Arrange
@@ -48,7 +48,7 @@ namespace VuelosOne.Tests.Controllers
             Assert.AreEqual(typeof(ViewResult), result.GetType());
         }
 
-        [TestMethod]
+        [Test]
         public void IngresarUsuarioTest()
         {
             //Arrange
@@ -66,7 +66,7 @@ namespace VuelosOne.Tests.Controllers
             Assert.AreEqual(EXITO, resultado);
         }
 
-        [TestMethod]
+        [Test]
         public void IngresarUsuarioTestFalla()
         {
             //Arrange
@@ -85,7 +85,7 @@ namespace VuelosOne.Tests.Controllers
             Assert.AreEqual(FALLIDO, resultado);
         }
 
-        [TestMethod]
+        [Test]
         public void LoguearUsuarioExitosoAplicacionTest()
         {
             //Arrange
@@ -101,7 +101,7 @@ namespace VuelosOne.Tests.Controllers
             Assert.AreEqual(EXITO, resultado);
         }
 
-        [TestMethod]
+        [Test]
         public void LoguearUsuarioFallidoAplicacionTest()
         {
             //Arrange
@@ -117,7 +117,7 @@ namespace VuelosOne.Tests.Controllers
             Assert.AreEqual(FALLIDO, resultado);
         }
 
-        [TestMethod]
+        [Test]
         public void CargarVistaRegistrarUsuario()
         {
             ViewResult result = usuarioControlador.RegistrarUsuario() as ViewResult;
@@ -127,7 +127,7 @@ namespace VuelosOne.Tests.Controllers
             Assert.AreEqual(typeof(ViewResult), result.GetType());
         }
 
-        [TestMethod]
+        [Test]
         public void CargarVistaLoginUsuario()
         {
             ViewResult result = usuarioControlador.Login() as ViewResult;
@@ -137,7 +137,7 @@ namespace VuelosOne.Tests.Controllers
             Assert.AreEqual(typeof(ViewResult), result.GetType());
         }
 
-        [TestMethod]
+        [Test]
         public void SalirAplicacion()
         {
             //Act

@@ -92,3 +92,9 @@ C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\Vu
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\obj\Debug\VuelosOne.csprojResolveAssemblyReference.cache
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\obj\Debug\VuelosOne.dll
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\obj\Debug\VuelosOne.pdb
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\Default.srprofile
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\nunit.framework.dll
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\SpecRun.SpecFlowPlugin.dll
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\TechTalk.SpecFlow.dll
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\TechTalk.SpecRun.dll
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\nunit.framework.xml

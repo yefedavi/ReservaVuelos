@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +8,11 @@ using System.Web.Mvc;
 using VuelosOne.BussinesClass;
 using VuelosOne.Controllers;
 using VuelosOne.Tests.Mocks;
+using NUnit.Framework;
 
 namespace VuelosOne.Tests.Controllers
 {
-    [TestClass]
+    [TestFixture]
     public class VueloControllerTest
     {
         private const string CON_RESULTADOS = "conResultados";
@@ -19,7 +20,7 @@ namespace VuelosOne.Tests.Controllers
 
         private VueloController VueloControlador;
 
-        [TestInitialize()]
+        [TestFixtureSetUp]
         public void Inicializar()
         {
             AdministrarVuelosMOCK mockVuelos=new AdministrarVuelosMOCK();
@@ -27,7 +28,7 @@ namespace VuelosOne.Tests.Controllers
 
         }
 
-        [TestMethod]
+        [Test]
         public void CargarConsultaVuelosTest()
         {
             // Arrange
@@ -40,7 +41,7 @@ namespace VuelosOne.Tests.Controllers
             Assert.AreEqual(typeof(ViewResult), result.GetType());
         }
 
-        [TestMethod]
+        [Test]
         public void ListarVuelosDisponiblesTipoHorarioExitosaTest()
         {
             // Arrange
@@ -55,7 +56,7 @@ namespace VuelosOne.Tests.Controllers
             Assert.AreEqual(typeof(PartialViewResult), result.GetType());
         }
 
-        [TestMethod]
+        [Test]
         public void ListarVuelosDisponiblesTipoHorarioFallidaTest()
         {
             // Arrange
@@ -70,7 +71,7 @@ namespace VuelosOne.Tests.Controllers
             Assert.AreEqual(typeof(PartialViewResult), result.GetType());
         }
 
-        [TestMethod]
+        [Test]
         public void ListarVuelosDisponiblesTipoTarifaExitosaTest()
         {
             // Arrange
@@ -85,7 +86,7 @@ namespace VuelosOne.Tests.Controllers
             Assert.AreEqual(typeof(PartialViewResult), result.GetType());
         }
 
-        [TestMethod]
+        [Test]
         public void ListarVuelosDisponiblesTipoTarifaFallidaTest()
         {
             // Arrange

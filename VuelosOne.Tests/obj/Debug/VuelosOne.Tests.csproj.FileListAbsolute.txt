@@ -96,3 +96,9 @@ C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\Vu
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\obj\Debug\VuelosOne.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\obj\Debug\VuelosOne.Tests.dll
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\obj\Debug\VuelosOne.Tests.pdb
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\Default.srprofile
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\SpecRun.SpecFlowPlugin.dll
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\TechTalk.SpecRun.dll
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\nunit.framework.xml

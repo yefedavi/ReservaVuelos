@@ -1,0 +1,64 @@
+﻿Appdomain Disposed
+Test Suite Dump
+#0: VuelosOne.Tests/Default - 
+#1: Default - 
+#3: VuelosOne.Tests - 
+#4: VuelosOne.Tests.Controllers.UsuarioControllerTest - 
+#5: CargarUsuarioControllerTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:CargarUsuarioControllerTest
+#6: IngresarUsuarioTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:IngresarUsuarioTest
+#7: IngresarUsuarioTestFalla - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:IngresarUsuarioTestFalla
+#8: LoguearUsuarioExitosoAplicacionTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:LoguearUsuarioExitosoAplicacionTest
+#9: LoguearUsuarioFallidoAplicacionTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:LoguearUsuarioFallidoAplicacionTest
+#10: CargarVistaRegistrarUsuario - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:CargarVistaRegistrarUsuario
+#11: CargarVistaLoginUsuario - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:CargarVistaLoginUsuario
+#12: SalirAplicacion - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:SalirAplicacion
+End: Test Suite Dump
+Scheduler: considering #5 for thread #0
+Scheduler: using #5 for thread #0
+Test #5 is scheduled for thread #0
+Thread #0: creating new test thread executor for VuelosOne.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\Yeferson Davila\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.2.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Test #5/0 is started on thread #0
+Scheduler: considering #6 for thread #0
+Scheduler: using #6 for thread #0
+Test #6 is scheduled for thread #0
+Test #5 is finished on thread #0 as Succeeded within 0,6082528 seconds
+Test #6/0 is started on thread #0
+Scheduler: considering #7 for thread #0
+Scheduler: using #7 for thread #0
+Test #7 is scheduled for thread #0
+Test #6 is finished on thread #0 as Succeeded within 0,0156443 seconds
+Test #7/0 is started on thread #0
+Scheduler: considering #8 for thread #0
+Scheduler: using #8 for thread #0
+Test #8 is scheduled for thread #0
+Test #7 is finished on thread #0 as Succeeded within 0,0156083 seconds
+Test #8/0 is started on thread #0
+Scheduler: considering #9 for thread #0
+Scheduler: using #9 for thread #0
+Test #9 is scheduled for thread #0
+Test #8 is finished on thread #0 as Succeeded within 0,0156439 seconds
+Test #9/0 is started on thread #0
+Scheduler: considering #10 for thread #0
+Scheduler: using #10 for thread #0
+Test #10 is scheduled for thread #0
+Test #9 is finished on thread #0 as Succeeded within 0,0156233 seconds
+Test #10/0 is started on thread #0
+Scheduler: considering #11 for thread #0
+Scheduler: using #11 for thread #0
+Test #11 is scheduled for thread #0
+Test #10 is finished on thread #0 as Succeeded within 0,0040037 seconds
+Test #11/0 is started on thread #0
+Scheduler: considering #12 for thread #0
+Scheduler: using #12 for thread #0
+Test #12 is scheduled for thread #0
+Test #11 is finished on thread #0 as Succeeded within 0,0156064 seconds
+Test #12/0 is started on thread #0
+Test #12 is finished on thread #0 as Succeeded within 0,0156458 seconds
+Appdomain Disposed
+Total: 8
+Succeeded: 8
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
