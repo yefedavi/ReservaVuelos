@@ -26,7 +26,7 @@ namespace VuelosOne.Tests.Controllers
         private Mock<IAdministrarUsuarios> objetoMock;
         private UsuarioController usuarioControlador;
 
-        [OneTimeSetUp]
+        [SetUp]
         public void Initialize() {
             objetoMock = new Mock<IAdministrarUsuarios>();
             AdministrarUsuarioMOCK mock = new AdministrarUsuarioMOCK();

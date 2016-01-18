@@ -98,3 +98,4 @@ C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\Vu
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\obj\Debug\VuelosOne.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\obj\Debug\VuelosOne.Tests.dll
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\obj\Debug\VuelosOne.Tests.pdb
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\Rhino.Mocks.xml
