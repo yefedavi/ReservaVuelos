@@ -162,7 +162,7 @@
           <Key>
             <PropertyRef Name="Codigo" />
           </Key>
-          <Property Name="Codigo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="Vuelo" Type="Int32" Nullable="false" />
           <Property Name="Usuario" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Usuario1" Relationship="Self.FK_Reserva_Usuario" FromRole="Reserva" ToRole="Usuario" />

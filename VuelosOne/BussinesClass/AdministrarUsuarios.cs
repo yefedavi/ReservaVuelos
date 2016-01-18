@@ -67,5 +67,30 @@ namespace VuelosOne.BussinesClass
                            select u;
             return usuarios.ToList();
         }
+
+        /// <summary>
+        /// Mètodo encargado de validar si el usuario es mayor de edad
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns>true si es mayor de edad,de lo contrario retorna false</returns>
+        public Boolean EsMayorDeEdad(String username)
+        {
+            Boolean isMayorEdad = false;
+            var queryUser = from u in vuelosContext.Usuario
+                          where u.Username == username
+                          select u.FechaNacimiento;
+            DateTime fechaNacimientoUsuario = queryUser.First();
+
+            //Consulto la fecha de nacimiento y valido
+            DateTime fechaActual = DateTime.Today;
+            int YearsDifference = fechaActual.Year - fechaNacimientoUsuario.Year;
+
+            if (YearsDifference >= 18)
+            {
+                isMayorEdad = true;
+            }
+
+            return isMayorEdad;
+        }
     }
 }

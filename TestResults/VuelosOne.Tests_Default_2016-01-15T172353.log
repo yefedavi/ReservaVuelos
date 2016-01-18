@@ -1,0 +1,120 @@
+﻿Appdomain Disposed
+Test Suite Dump
+#0: VuelosOne.Tests/Default - 
+#1: Default - 
+#3: VuelosOne.Tests - 
+#4: VuelosOne.Tests.Controllers.UsuarioControllerTest - 
+#13: VuelosOne.Tests.Controllers.VueloControllerTest - 
+#5: CargarUsuarioControllerTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:CargarUsuarioControllerTest
+#6: IngresarUsuarioTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:IngresarUsuarioTest
+#7: IngresarUsuarioTestFalla - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:IngresarUsuarioTestFalla
+#8: LoguearUsuarioExitosoAplicacionTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:LoguearUsuarioExitosoAplicacionTest
+#9: LoguearUsuarioFallidoAplicacionTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:LoguearUsuarioFallidoAplicacionTest
+#10: CargarVistaRegistrarUsuario - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:CargarVistaRegistrarUsuario
+#11: CargarVistaLoginUsuario - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:CargarVistaLoginUsuario
+#12: SalirAplicacion - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.UsuarioControllerTest/TestMethod:SalirAplicacion
+#14: CargarConsultaVuelosTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.VueloControllerTest/TestMethod:CargarConsultaVuelosTest
+#15: ListarVuelosDisponiblesTipoHorarioExitosaTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.VueloControllerTest/TestMethod:ListarVuelosDisponiblesTipoHorarioExitosaTest
+#16: ListarVuelosDisponiblesTipoHorarioFallidaTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.VueloControllerTest/TestMethod:ListarVuelosDisponiblesTipoHorarioFallidaTest
+#17: ListarVuelosDisponiblesTipoTarifaExitosaTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.VueloControllerTest/TestMethod:ListarVuelosDisponiblesTipoTarifaExitosaTest
+#18: ListarVuelosDisponiblesTipoTarifaFallidaTest - TestAssembly:VuelosOne.Tests/TestClass:VuelosOne.Tests.Controllers.VueloControllerTest/TestMethod:ListarVuelosDisponiblesTipoTarifaFallidaTest
+End: Test Suite Dump
+Scheduler: considering #5 for thread #0
+Scheduler: using #5 for thread #0
+Test #5 is scheduled for thread #0
+Thread #0: creating new test thread executor for VuelosOne.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\Yeferson Davila\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.2.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Test #5/0 is started on thread #0
+Scheduler: dequeuing a rescheduled item: 5
+Scheduler: considering #5 for thread #0
+Scheduler: using #5 for thread #0
+Test #5 is scheduled for thread #0
+Test #5 is finished on thread #0 as Failed within 0,1125699 seconds
+Test #5/1 is started on thread #0
+Scheduler: dequeuing a rescheduled item: 5
+Scheduler: considering #5 for thread #0
+Scheduler: using #5 for thread #0
+Test #5 is scheduled for thread #0
+Test #5 is finished on thread #0 as Failed within 0,0045074 seconds
+Test #5/2 is started on thread #0
+Scheduler: considering #6 for thread #0
+Scheduler: using #6 for thread #0
+Test #6 is scheduled for thread #0
+Test #5 is finished on thread #0 as Failed within 0,0040028 seconds
+Test #6/0 is started on thread #0
+Scheduler: dequeuing a rescheduled item: 6
+Scheduler: considering #6 for thread #0
+Scheduler: using #6 for thread #0
+Test #6 is scheduled for thread #0
+Test #6 is finished on thread #0 as Failed within 0,004503 seconds
+Test #6/1 is started on thread #0
+Scheduler: dequeuing a rescheduled item: 6
+Scheduler: considering #6 for thread #0
+Scheduler: using #6 for thread #0
+Test #6 is scheduled for thread #0
+Test #6 is finished on thread #0 as Failed within 0 seconds
+Test #6/2 is started on thread #0
+Scheduler: considering #7 for thread #0
+Scheduler: using #7 for thread #0
+Test #7 is scheduled for thread #0
+Test #6 is finished on thread #0 as Failed within 0 seconds
+Test #7/0 is started on thread #0
+Cancelling because configured number of failures reached
+Test #7 is finished on thread #0 as Failed within 0,0316714 seconds
+Appdomain Disposed
+Scheduler: considering #8 for thread #-1
+Scheduler: using #8 for thread #-1
+Test #8 is scheduled for thread #-1
+Test #8/0 is started on thread #-1
+Test #8 is finished on thread #-1 as Skipped within 0 seconds
+Scheduler: considering #9 for thread #-1
+Scheduler: using #9 for thread #-1
+Test #9 is scheduled for thread #-1
+Test #9/0 is started on thread #-1
+Test #9 is finished on thread #-1 as Skipped within 0 seconds
+Scheduler: considering #10 for thread #-1
+Scheduler: using #10 for thread #-1
+Test #10 is scheduled for thread #-1
+Test #10/0 is started on thread #-1
+Test #10 is finished on thread #-1 as Skipped within 0 seconds
+Scheduler: considering #11 for thread #-1
+Scheduler: using #11 for thread #-1
+Test #11 is scheduled for thread #-1
+Test #11/0 is started on thread #-1
+Test #11 is finished on thread #-1 as Skipped within 0 seconds
+Scheduler: considering #12 for thread #-1
+Scheduler: using #12 for thread #-1
+Test #12 is scheduled for thread #-1
+Test #12/0 is started on thread #-1
+Test #12 is finished on thread #-1 as Skipped within 0 seconds
+Scheduler: considering #14 for thread #-1
+Scheduler: using #14 for thread #-1
+Test #14 is scheduled for thread #-1
+Test #14/0 is started on thread #-1
+Test #14 is finished on thread #-1 as Skipped within 0 seconds
+Scheduler: considering #15 for thread #-1
+Scheduler: using #15 for thread #-1
+Test #15 is scheduled for thread #-1
+Test #15/0 is started on thread #-1
+Test #15 is finished on thread #-1 as Skipped within 0 seconds
+Scheduler: considering #16 for thread #-1
+Scheduler: using #16 for thread #-1
+Test #16 is scheduled for thread #-1
+Test #16/0 is started on thread #-1
+Test #16 is finished on thread #-1 as Skipped within 0 seconds
+Scheduler: considering #17 for thread #-1
+Scheduler: using #17 for thread #-1
+Test #17 is scheduled for thread #-1
+Test #17/0 is started on thread #-1
+Test #17 is finished on thread #-1 as Skipped within 0 seconds
+Scheduler: considering #18 for thread #-1
+Scheduler: using #18 for thread #-1
+Test #18 is scheduled for thread #-1
+Test #18/0 is started on thread #-1
+Test #18 is finished on thread #-1 as Skipped within 0 seconds
+Total: 13 (test executions: 17)
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 10
+Failed: 3

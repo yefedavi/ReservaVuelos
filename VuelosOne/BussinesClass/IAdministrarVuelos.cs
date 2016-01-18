@@ -36,7 +36,14 @@ namespace VuelosOne.BussinesClass
         /// mediante el codigo
         /// </summary>
         /// <param name="codigo"></param>
-        /// <returns></returns>
+        /// <returns>Ciudad a la que corresponde el codigo</returns>
         Ciudad obtenerCiudadCodigo(string codigo);
+
+        /// <summary>
+        /// Mètodo encargado de consultar un vuelo mediante el identificador
+        /// </summary>
+        /// <param name="idVuelo">Identificador del vuelo</param>
+        /// <returns>Vuelo al que corresponde el identificador</returns>
+        Vuelo consultarVueloId(int idVuelo);
     }
 }

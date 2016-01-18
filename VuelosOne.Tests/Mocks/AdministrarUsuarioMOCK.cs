@@ -37,5 +37,11 @@ namespace VuelosOne.Tests.Mocks
         {
             throw new NotImplementedException();
         }
+
+
+        public bool EsMayorDeEdad(string username)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<VuelosOne.Models.Vuelo>
+
     @if (ViewBag.HayRegistros == "conResultados")
     {
         <table class="table table-hover">
@@ -11,6 +12,7 @@
                     <th>Horario de Llegada</th>
                     <th>Ciudad Origen</th>
                     <th>Ciudad Destino</th>
+                    <th>Reservar Vuelo</th>
                     <th>Tarifa</th>
                 </tr>
             </thead>
@@ -26,6 +28,7 @@
                         <td>@item.Ciudad1.Nombre</td>
                         <td>@item.Ciudad.Nombre</td>
                         <td>@item.Tarifa.ToString("#,##0.00")</td>
+                        <td><a onclick="IniciarConfirmacion(@item.Id)" >Reservar</a></td>
                     </tr>
                 }
             </tbody>
@@ -37,3 +40,7 @@
             <strong>No hay resultados!</strong> no se encontraron resultados que coincidan con los filtros de bùsqueda.
         </div>
     }
+
+<form id="frmReserva" action="/Reserva/ConfirmarReserva" method="post">
+    <input type="hidden" name="codigoVuelo" id="codigoVuelo" />
+</form>

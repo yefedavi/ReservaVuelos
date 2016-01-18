@@ -108,5 +108,15 @@ namespace VuelosOne.Tests.Mocks
             }
             return ciudad;
         }
+
+         /// <summary>
+        /// Mètodo encargado de consultar un vuelo mediante el identificador
+        /// </summary>
+        /// <param name="idVuelo">Identificador del vuelo</param>
+        /// <returns>Vuelo al que corresponde el identificador</returns>
+        public Vuelo consultarVueloId(int idVuelo)
+        {
+            return new Vuelo();
+        }
     }
 }

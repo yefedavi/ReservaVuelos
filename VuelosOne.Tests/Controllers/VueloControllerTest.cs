@@ -20,7 +20,7 @@ namespace VuelosOne.Tests.Controllers
 
         private VueloController VueloControlador;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Inicializar()
         {
             AdministrarVuelosMOCK mockVuelos=new AdministrarVuelosMOCK();

@@ -32,5 +32,12 @@ namespace VuelosOne.BussinesClass
         /// </summary>
         /// <returns>Lista de usuarios</returns>
         List<Usuario> GetAllUsuarios();
+
+        /// <summary>
+        /// Mètodo encargado de validar si el usuario es mayor de edad
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns>true si es mayor de edad,de lo contrario retorna false</returns>
+        Boolean EsMayorDeEdad(String username);
     }
 }

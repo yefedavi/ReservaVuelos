@@ -1,0 +1,42 @@
+﻿@model VuelosOne.Models.Vuelo
+@{
+    ViewBag.Title = "ConfirmarReserva";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Featured{
+    <div class="hero-init">
+        <h2>Confirmaciòn de reserva</h2>
+        <p>confirma tu reserva</p>
+    </div>
+}
+<p>
+    <label>Identificador del vuelo</label>
+    @Html.TextBoxFor(m => m.Id, new { @readonly="readonly" })
+</p>
+
+<p>
+    <label>Ciudad Origen</label>
+    @Html.TextBoxFor(m => m.Ciudad1.Nombre, new { @readonly = "readonly" })
+</p>
+
+<p>
+    <label>Ciudad Destino</label>
+    @Html.TextBoxFor(m => m.Ciudad.Nombre, new { @readonly = "readonly" })
+</p>
+
+<p>
+    <label>Horario Salida</label>
+    @Html.TextBoxFor(m => m.HorarioSalida, new { @readonly = "readonly" })
+</p>
+
+<p>
+    <label>Horario Llegada</label>
+    @Html.TextBoxFor(m => m.HorarioLlegada, new { @readonly = "readonly" })
+</p>
+
+<p>
+    <label>Tarifa</label>
+    @Html.TextBoxFor(m => m.Tarifa, new { @readonly = "readonly" })
+</p>
+
+<input  type="submit" onclick="" value="Confirmar Reserva" />

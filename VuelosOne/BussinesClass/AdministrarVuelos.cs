@@ -71,5 +71,16 @@ namespace VuelosOne.BussinesClass
             return ciudad.First();
         }
 
+        /// <summary>
+        /// Mètodo encargado de consultar un vuelo mediante el identificador
+        /// </summary>
+        /// <param name="idVuelo">Identificador del vuelo</param>
+        /// <returns>Vuelo al que corresponde el identificador</returns>
+        public Vuelo consultarVueloId(int idVuelo)
+        {
+            Vuelo vueloConsultado = vuelosContext.Vuelo.Single(v => v.Id == idVuelo);
+            return vueloConsultado;
+        }
+
     }
 }
