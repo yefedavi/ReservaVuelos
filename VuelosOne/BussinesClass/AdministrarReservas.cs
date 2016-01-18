@@ -5,6 +5,7 @@ using System.Web;
 using VuelosOne.Models;
 using VuelosOne.BussinesClass;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace VuelosOne.BussinesClass
 {
@@ -48,10 +49,8 @@ namespace VuelosOne.BussinesClass
                     int asientosDispVuelo = vuelo.AsientosDisponibles;
                     asientosDispVuelo = asientosDispVuelo - 1;
                     vuelo.AsientosDisponibles = asientosDispVuelo;
-                   //vuelosContext.Refresh(RefreshMode.StoreWins, yourSection);
-                    //vuelosContext.Vuelo.Attach(vuelo);
-                    //vuelosContext.Entry(vuelo).State = EntityState.Modified; 
-                    //vuelosContext.SaveChanges();
+                    vuelosContext.Database.ExecuteSqlCommand("UPDATE Vuelo SET AsientosDisponibles =@asiento WHERE " +
+                    "Id=@id ", new SqlParameter("asiento", asientosDispVuelo), new SqlParameter("id", vuelo.Id));
                     //Creo la resuerva
                     Usuario usuarioReserva = AdminUsuarios.ConsultarUsuario(username);
                     Reserva reserva = new Reserva();
