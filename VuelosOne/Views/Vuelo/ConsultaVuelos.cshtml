@@ -55,9 +55,7 @@
         <div class="panel-body">
             <label>@Html.DropDownList("Ciudad Origen", ViewData["ciudades"] as SelectList, new { name = "ciudadorigen", id = "ciudadorigen" }) Origen</label>
             <label>@Html.DropDownList("Ciudad Destino", ViewData["ciudades"] as SelectList, new { name = "ciudaddestino", id = "ciudaddestino" }) Destino</label>
-            <a href="#" class="btn btn-success" onclick="ConsultarVuelos();">
-                Consultar <i class="icon-plus"></i>&nbsp;
-            </a>
+            <a href="#" class="btn btn-success" onclick="ConsultarVuelos();">Consultar</a>
         </div>
     </div>
 

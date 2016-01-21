@@ -45,6 +45,7 @@ C:\Users\Yeferson Davila\Documents\Material .NET\Aprendientocsharp\VuelosOne\Vue
 C:\Users\Yeferson Davila\Documents\Material .NET\Aprendientocsharp\VuelosOne\VuelosOne\bin\Moq.xml
 C:\Users\Yeferson Davila\Documents\Material .NET\Aprendientocsharp\VuelosOne\VuelosOne\bin\MvcContrib.TestHelper.dll
 C:\Users\Yeferson Davila\Documents\Material .NET\Aprendientocsharp\VuelosOne\VuelosOne\bin\Rhino.Mocks.dll
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\VuelosOne.dll.config
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\VuelosOne.dll
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\VuelosOne.pdb
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\Antlr3.Runtime.dll
@@ -91,6 +92,6 @@ C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\Vu
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\es\System.Web.WebPages.resources.dll
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\obj\Debug\VuelosOne.csprojResolveAssemblyReference.cache
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\obj\Debug\VuelosOne.dll
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\obj\Debug\VuelosOne.pdb
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne\obj\Debug\VuelosOne.csprojResolveAssemblyReference.cache

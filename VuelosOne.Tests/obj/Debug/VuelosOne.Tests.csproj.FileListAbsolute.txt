@@ -73,6 +73,7 @@ C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\Vu
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\Moq.pdb
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\Moq.xml
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\Rhino.Mocks.xml
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\System.Web.Helpers.xml
@@ -98,4 +99,3 @@ C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\Vu
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\obj\Debug\VuelosOne.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\obj\Debug\VuelosOne.Tests.dll
 C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\obj\Debug\VuelosOne.Tests.pdb
-C:\Users\Yeferson Davila\Documents\MaterialCSHARP\Aprendientocsharp\VuelosOne\VuelosOne.Tests\bin\Debug\Rhino.Mocks.xml
